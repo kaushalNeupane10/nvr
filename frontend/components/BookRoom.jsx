@@ -46,7 +46,7 @@ export default function BookRoom() {
             {roomData.map((room, idx) => (
               <div
                 key={idx}
-                className="group rounded-3xl bg-white shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 hover:shadow-2xl"
+                className="group rounded-3xl bg-[#F3F0E9] shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 hover:shadow-2xl"
               >
                 {/* img sliders */}
                 <div className="w-full aspect-[4/3] md:aspect-[16/9] relative">
