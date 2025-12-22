@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-export default function BookRoom() {
-  const settings = {
+export default function page() {
+    const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -25,7 +25,6 @@ export default function BookRoom() {
     balcony: <FaUmbrellaBeach className="text-[#00311F] w-5 h-5" />,
     ac: <FaSnowflake className="text-[#00311F] w-5 h-5" />,
   };
-
   return (
     <>
       <section className="py-24 bg-[#FFF7E6] px-6">
@@ -43,7 +42,7 @@ export default function BookRoom() {
 
           {/* grid and rooms mapin */}
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {roomData.slice(0,3).map((room, idx) => (
+            {roomData.map((room, idx) => (
               <div
                 key={idx}
                 className="group rounded-3xl bg-[#F3F0E9] shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 hover:shadow-2xl"
@@ -99,16 +98,6 @@ export default function BookRoom() {
                 </div>
               </div>
             ))}
-          </div>
-          {/* see more */}
-          <div className="flex justify-end mt-12">
-            <Link
-              href="/rooms"
-              className="inline-flex items-center gap-2 text-[#00311F] font-semibold hover:text-[#004F2F] transition-colors"
-            >
-              Explore More
-              <FaArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </section>
