@@ -1,13 +1,13 @@
 const testimonials = [
   {
-    name: "Aarav Sharma",
+    name: "Kaushal Neupane",
     rating: 5,
     review:
       "The campfire nights were magical. Peaceful surroundings and warm hospitality made our stay unforgettable.",
-    img: "/images/testimonials/avatar.png",
+    img: "/images/testimonials/kaushal.jpg",
   },
   {
-    name: "Sita Karki",
+    name: "Bibek Poudel",
     rating: 4,
     review:
       "Loved the nature walks and calm environment. Perfect place to disconnect and relax.",

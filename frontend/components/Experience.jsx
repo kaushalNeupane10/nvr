@@ -3,7 +3,7 @@ import data from "@/data/experience";
 
 export default function Experience() {
   return (
-        <>
+    <>
       <section className="bg-[#FFF7E6] py-24 px-6">
         <div className="max-w-7xl mx-auto">
           {/* heading */}
@@ -13,7 +13,8 @@ export default function Experience() {
             </h2>
             {/* sub-heading */}
             <p className="mt-4 max-w-2xl mx-auto text-lg text-[#4B6B5F]">
-              Breathe fresh air, enjoy quiet moments, and experience thoughtful comforts that turn simple stays into lasting memories.
+              Breathe fresh air, enjoy quiet moments, and experience thoughtful
+              comforts that turn simple stays into lasting memories.
             </p>
           </div>
 
@@ -30,7 +31,10 @@ export default function Experience() {
                     src={item.img}
                     alt={item.title}
                     fill
-                    className="w-130 h-130 object-cover transition-transform duration-300 group-hover:scale-110"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
 
@@ -45,5 +49,5 @@ export default function Experience() {
         </div>
       </section>
     </>
-  )
+  );
 }

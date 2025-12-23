@@ -5,8 +5,6 @@ import roomData from "@/data/roomData";
 import { FaWifi, FaBath, FaUmbrellaBeach, FaSnowflake } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaArrowRight } from "react-icons/fa";
-import Link from "next/link";
 export default function page() {
     const settings = {
     dots: true,
@@ -27,7 +25,7 @@ export default function page() {
   };
   return (
     <>
-      <section className="py-24 bg-[#FFF7E6] px-6">
+      <section className="py-12 bg-[#FFF7E6] px-6">
         <div className="max-w-7xl mx-auto">
           {/* heading*/}
           <div className="text-center mb-16">

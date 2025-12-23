@@ -32,6 +32,9 @@ export default function WhyChooseUs() {
                     src={item.img}
                     alt={item.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    decoding="async"
+                    loading="lazy"
                     className="w-130 h-130 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>

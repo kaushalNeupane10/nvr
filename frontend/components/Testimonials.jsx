@@ -10,10 +10,10 @@ import "swiper/css";
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FDF6E9] py-24 px-6">
+    <section className="bg-[#FDF6E9] py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
-        <div className="text-center mb-16">
+        {/* heading*/}
+        <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-bold text-[#00311F]">
             Guest Reviews
           </h2>
@@ -22,13 +22,13 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Slider */}
+        {/* slider */}
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           spaceBetween={30}
-          className="overflow-visible"
           loop
+          className="!overflow-visible"
           breakpoints={{
             0: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
@@ -36,39 +36,43 @@ export default function Testimonials() {
           }}
         >
           {testimonials.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="overflow-visible relative bg-white rounded-3xl pt-20 pb-8 px-6 shadow-lg hover:shadow-2xl transition-all duration-300">
-                
-                {/* avatar */}
-                <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
-  <div className="h-28 w-28 rounded-full bg-white p-1 shadow-lg">
-    <div className="h-full w-full rounded-full overflow-hidden bg-gray-100">
-      <Image
-        src={item.img}
-        alt={item.name}
-        width={112}
-        height={112}
-        className="object-contain"
-        unoptimized
-      />
-    </div>
-  </div>
-</div>
+            <SwiperSlide key={index} className="!overflow-visible">
+              <div className="relative bg-[#F3F0E9] rounded-3xl pt-24 pb-8 px-6 shadow-lg hover:shadow-2xl transition-all duration-300">
 
-                {/* Content */}
+                {/* avatar */}
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-20">
+                  <div className="h-28 w-28 sm:h-32 sm:w-32 rounded-full bg-white p-1 shadow-xl">
+                    <div className="relative h-full w-full rounded-full overflow-hidden bg-gray-100">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="128px"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* content */}
                 <div className="text-center">
                   <h3 className="text-lg font-semibold text-[#00311F]">
                     {item.name}
                   </h3>
 
-                  {/* Stars */}
-                  <div className="flex justify-center mt-2 mb-4">
+                  {/* stars */}
+                  <div className="flex justify-center mt-2 mb-4 gap-2">
                     {[...Array(item.rating)].map((_, i) => (
-                      <FaStar key={i} className="text-yellow-400 w-4 h-4" />
+                      <FaStar
+                        key={i}
+                        className="text-yellow-400 w-4 h-4"
+                      />
                     ))}
                   </div>
 
-                  {/* Review */}
+                  {/* review */}
                   <p className="text-sm text-[#4B6B5F] leading-relaxed">
                     “{item.review}”
                   </p>

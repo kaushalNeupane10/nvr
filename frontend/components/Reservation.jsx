@@ -45,12 +45,8 @@ export default function Reservation() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4">
-                <button className="bg-[#00311F] text-white px-6 py-3 rounded-lg font-semibold transition">
-                  Reserve Now
-                </button>
-
                 <button className="border-2 border-[#00311F] text-[#00311F] px-6 py-3 rounded-lg font-semibold hover:bg-[#00311F] hover:text-white transition">
-                  Check Availability
+                  Book Now
                 </button>
               </div>
             </div>
