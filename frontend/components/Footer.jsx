@@ -1,11 +1,11 @@
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
-  FaYoutube,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
+  FaWhatsapp,
+  FaTiktok,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -27,30 +27,39 @@ export default function Footer() {
 
             {/* social icons  */}
             <div className="flex gap-4 mt-6">
-              <a
+              <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
-                href="#"
+                href="https://www.facebook.com/p/Narayani-View-Resort-100087618230983/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaFacebookF />
-              </a>
-              <a
+                <FaFacebookF className="text-[#1877F2] w-5 h-5"/>
+              </Link>
+              <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
-                href="#"
+                href="https://www.instagram.com/p/DEH9oNwqIvW/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaInstagram />
-              </a>
-              <a
+                <FaInstagram className="text-pink-500 w-5 h-5"/>
+              </Link>
+              
+              <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
-                href="#"
+                href="https://wa.me/9779845974748"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaTwitter />
-              </a>
-              <a
+                <FaWhatsapp className="text-[#25D366] w-5 h-5"/>
+              </Link>
+              <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
-                href="#"
+                href="https://www.tiktok.com/@narayani.river.vi"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FaYoutube />
-              </a>
+                <FaTiktok className="text-[#EE1D52] w-5 h-5"/>
+              </Link>
             </div>
           </div>
 
@@ -111,7 +120,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaPhoneAlt />
-                <span>+977 9800000000</span>
+                <span><Link href="tel:+9779845974748">+977 9845974748</Link></span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope />
