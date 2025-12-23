@@ -12,7 +12,6 @@ export default function page() {
       <BookRoom/>
       <Experience />
       <Testimonials/>
-      <Footer/>
     </>
   )
 }

@@ -4,7 +4,7 @@ import data from "@/data/experience";
 export default function Experience() {
   return (
     <>
-      <section className="bg-[#FFF7E6] py-24 px-6">
+      <section className="bg-[#FFF7E6] py-12 px-6">
         <div className="max-w-7xl mx-auto">
           {/* heading */}
           <div className="text-center mb-16">
