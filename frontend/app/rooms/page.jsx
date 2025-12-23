@@ -5,6 +5,8 @@ import roomData from "@/data/roomData";
 import { FaWifi, FaBath, FaUmbrellaBeach, FaSnowflake } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HeroSection from "@/components/HeroSection";
+import Experience from "@/components/Experience";
 export default function page() {
     const settings = {
     dots: true,
@@ -25,6 +27,7 @@ export default function page() {
   };
   return (
     <>
+    <HeroSection/>
       <section className="py-12 bg-[#FFF7E6] px-6">
         <div className="max-w-7xl mx-auto">
           {/* heading*/}
@@ -99,6 +102,7 @@ export default function page() {
           </div>
         </div>
       </section>
+      <Experience/>
     </>
   );
 }
