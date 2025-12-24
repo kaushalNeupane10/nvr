@@ -32,16 +32,18 @@ export default function Footer() {
                 href="https://www.facebook.com/p/Narayani-View-Resort-100087618230983/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="visit narayani view resort facebook"
               >
-                <FaFacebookF className="text-[#1877F2] w-5 h-5"/>
+                <FaFacebookF aria-hidden="true" className="text-[#1877F2] w-5 h-5"/>
               </Link>
               <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
                 href="https://www.instagram.com/p/DEH9oNwqIvW/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="visit narayani view resort instagram"
               >
-                <FaInstagram className="text-pink-500 w-5 h-5"/>
+                <FaInstagram aria-hidden="true" className="text-pink-500 w-5 h-5"/>
               </Link>
               
               <Link
@@ -49,16 +51,18 @@ export default function Footer() {
                 href="https://wa.me/9779845974748"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="visit narayani view resort whatsapp"
               >
-                <FaWhatsapp className="text-[#25D366] w-5 h-5"/>
+                <FaWhatsapp aria-hidden="true" className="text-[#25D366] w-5 h-5"/>
               </Link>
               <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
                 href="https://www.tiktok.com/@narayani.river.vi"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="visit narayani view resort tiktok"
               >
-                <FaTiktok className="text-[#EE1D52] w-5 h-5"/>
+                <FaTiktok aria-hidden="true" className="text-[#EE1D52] w-5 h-5"/>
               </Link>
             </div>
           </div>
