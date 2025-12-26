@@ -17,7 +17,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/30 md:bg-black/40" />
       </div>
 
-      <HeroMotion />
+      <HeroMotion title="Luxury Rooms Await" subtitle="Enjoy serene comfort, breathtaking views, and all the amenities to make
+        your stay unforgettable."/>
     </section>
   );
 }

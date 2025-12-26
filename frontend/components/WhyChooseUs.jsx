@@ -30,8 +30,8 @@ export default function WhyChooseUs() {
                   <Image
                     src={item.img}
                     alt={item.title}
-                    width={128}
-                    height={128}
+                    fill
+                    sizes="128px"
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>

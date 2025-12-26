@@ -38,7 +38,7 @@ export default function Footer() {
               </Link>
               <Link
                 className="p-3 bg-white/10 rounded-full hover:bg-white hover:text-[#00311F] transition"
-                href="https://www.instagram.com/p/DEH9oNwqIvW/?hl=en"
+                href="https://www.instagram.com/narayaniriverview/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="visit narayani view resort instagram"
