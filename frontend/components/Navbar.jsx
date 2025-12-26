@@ -40,7 +40,7 @@ export default function Navbar() {
           <li><Link href="/" className="hover:text-[#9FD3A9]">Home</Link></li>
           <li><Link href="/about" className="hover:text-[#9FD3A9]">About Us</Link></li>
           <li><Link href="/rooms" className="hover:text-[#9FD3A9]">Rooms</Link></li>
-          <li><Link href="/gallery" className="hover:text-[#9FD3A9]">Gallery</Link></li>
+          <li><Link href="/trackmybooking" className="hover:text-[#9FD3A9]">Track My Booking</Link></li>
 
           <li>
             <Link
@@ -69,7 +69,7 @@ export default function Navbar() {
             <li><Link href="/" onClick={() => setOpen(false)}>Home</Link></li>
             <li><Link href="/about" onClick={() => setOpen(false)}>About Us</Link></li>
             <li><Link href="/rooms" onClick={() => setOpen(false)}>Rooms</Link></li>
-            <li><Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link></li>
+            <li><Link href="/trackmybooking" onClick={() => setOpen(false)}>Track My Booking</Link></li>
 
             <li>
               <Link

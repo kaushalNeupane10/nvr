@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeroSection from "@/components/HeroSection";
 import Experience from "@/components/Experience";
+import Reservation from "@/components/Reservation";
 export default function page() {
     const settings = {
     dots: true,
@@ -103,6 +104,7 @@ export default function page() {
         </div>
       </section>
       <Experience/>
+      <Reservation/>
     </>
   );
 }

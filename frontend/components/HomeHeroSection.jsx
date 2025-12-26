@@ -10,7 +10,7 @@ export default function HomeHeroSection() {
 
       {/* video*/}
       <video
-        src="/images/home/"
+        src="/images/home/herovideo.mp4"
         autoPlay
         muted
         loop
