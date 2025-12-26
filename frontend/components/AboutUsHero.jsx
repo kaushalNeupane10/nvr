@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function AboutUsHeroCompact() {
   return (
-    <section className="w-full px-4 md:px-10 lg:px-20 py-14 bg-[#FFF7E6]">
-      <div className="flex flex-col lg:flex-row items-start gap-8 max-w-6xl mx-auto">
+    <section className="w-full px-4 md:px-10 lg:px-20 py-14 bg-[#00311F] ">
+      <div className="flex flex-col lg:flex-row items-start gap-8 max-w-6xl mx-auto mt-8">
 
         {/* left about us description */}
         <motion.div
