@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { FaStarOfDavid } from "react-icons/fa";
+// import { FaStarOfDavid } from "react-icons/fa";
+import { GiBeveledStar } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 export default function AboutUsHeroCompact() {
@@ -18,7 +19,7 @@ export default function AboutUsHeroCompact() {
           className="flex-1 flex flex-col justify-center bg-[#00311F] text-white rounded-3xl px-8 md:px-14 py-14 shadow-xl"
         >
           <div className="flex items-center gap-3 mb-4">
-            <FaStarOfDavid className="text-white text-2xl" />
+            <GiBeveledStar className="text-white text-2xl" />
             <span className="text-sm uppercase tracking-widest text-[#E6C27A]">
               About Us
             </span>
@@ -53,11 +54,11 @@ export default function AboutUsHeroCompact() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-40 md:h-56 rounded-2xl overflow-hidden shadow-lg"
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/images/experience/safari.jpg"
-              alt="Nature experience at the resort"
+              src="/images/logo/logo.png"
+              alt="logo of narayani view resort"
               fill
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -72,10 +73,10 @@ export default function AboutUsHeroCompact() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-40 md:h-56 rounded-2xl overflow-hidden shadow-xl"
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/images/experience/bbq.jpg"
+              src="/images/about/narayaniscene.png"
               alt="Relaxing by the Narayani River"
               fill
               priority={true}

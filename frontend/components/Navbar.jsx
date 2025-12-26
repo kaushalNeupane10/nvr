@@ -1,41 +1,47 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="bg-[#00311F] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide">
-          LOGO
+    <nav
+      className={`
+        absolute top-0 left-0 w-full z-20 transition-all duration-300
+        ${scrolled ? "fixed bg-[#00311F] shadow-lg" : "bg-transparent"}
+      `}
+    >
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-white">
+
+        {/* logo */}
+        <div className="relative w-48 h-12 md:w-56 md:h-14">
+          <Image
+            src="/images/logo/logo.png"
+            alt="logo"
+            fill
+            sizes="(max-width: 768px) 120px, 180px"
+            className="object-contain"
+            priority
+          />
         </div>
 
-        {/* Desktop Menu */}
+        {/* desktop */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <li>
-            <Link href="/" className="hover:text-[#9FD3A9] transition">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-[#9FD3A9] transition">
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link href="/rooms" className="hover:text-[#9FD3A9] transition">
-              Rooms
-            </Link>
-          </li>
-          <li>
-            <Link href="/gallery" className="hover:text-[#9FD3A9] transition">
-              Gallery
-            </Link>
-          </li>
+          <li><Link href="/" className="hover:text-[#9FD3A9]">Home</Link></li>
+          <li><Link href="/about" className="hover:text-[#9FD3A9]">About Us</Link></li>
+          <li><Link href="/rooms" className="hover:text-[#9FD3A9]">Rooms</Link></li>
+          <li><Link href="/gallery" className="hover:text-[#9FD3A9]">Gallery</Link></li>
+
           <li>
             <Link
               href="/book"
@@ -46,21 +52,17 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setOpen(!open)}
-          aria-label="open navigation menu"
-          className="md:hidden focus:outline-none"
-        >
+        {/* mobile toggle */}
+        <button onClick={() => setOpen(!open)} className="md:hidden">
           <div className="space-y-1">
-            <span className="block w-6 h-0.5 bg-white"></span>
-            <span className="block w-6 h-0.5 bg-white"></span>
-            <span className="block w-6 h-0.5 bg-white"></span>
+            <span className="block w-6 h-0.5 bg-white" />
+            <span className="block w-6 h-0.5 bg-white" />
+            <span className="block w-6 h-0.5 bg-white" />
           </div>
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* mobile menu */}
       {open && (
         <div className="md:hidden bg-[#00311F] px-6 pb-6">
           <ul className="flex flex-col gap-4 text-sm font-medium">
@@ -68,6 +70,7 @@ export default function Navbar() {
             <li><Link href="/about" onClick={() => setOpen(false)}>About Us</Link></li>
             <li><Link href="/rooms" onClick={() => setOpen(false)}>Rooms</Link></li>
             <li><Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link></li>
+
             <li>
               <Link
                 href="/book"
