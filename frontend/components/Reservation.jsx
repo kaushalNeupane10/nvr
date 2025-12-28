@@ -11,9 +11,9 @@ export default function Reservation() {
           {/* left reservation*/}
           <div className="bg-[#00311F] text-white px-8 md:px-14 py-16 flex items-center">
             <div className="max-w-2xl">
-              <h3 className="text-3xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                 Plan Your Vacation
-              </h3>
+              </h1>
               <p className="mt-6 text-base md:text-lg text-[#D1E5DC]">
                 Escape the ordinary and experience comfort, calm, and luxury.
                 Whether it’s a peaceful getaway or a memorable family trip,
@@ -37,9 +37,9 @@ export default function Reservation() {
           {/* right book your spot*/}
           <div className="bg-[#F3F0E9] px-8 py-16 flex items-center">
             <div className="w-full">
-              <h3 className="text-3xl md:text-4xl font-bold text-[#00311F]">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#00311F]">
                 Book Your Spot
-              </h3>
+              </h1>
               <p className="mt-4 text-[#4B6B5F]">
                 Secure your stay in just a few clicks.
               </p>
