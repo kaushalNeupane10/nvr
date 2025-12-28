@@ -6,7 +6,7 @@ export default function Reservation() {
       
       {/* container */}
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-[7fr_3fr] overflow-hidden rounded-2xl shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-[7fr_3fr] overflow-hidden rounded-2xl shadow-lg mt-8">
 
           {/* left reservation*/}
           <div className="bg-[#00311F] text-white px-8 md:px-14 py-16 flex items-center">

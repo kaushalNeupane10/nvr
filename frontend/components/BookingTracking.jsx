@@ -14,7 +14,7 @@ export default function BookingTracker() {
 
   return (
     <section className="w-full bg-[#00311F] py-20 px-4 md:px-10 lg:px-20">
-      {/* Heading */}
+      {/* heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-serif text-white">
           Track Your Booking
@@ -24,7 +24,7 @@ export default function BookingTracker() {
         </p>
       </div>
 
-      {/* Vertical Form Card */}
+      {/* form*/}
       <div className="max-w-3xl mx-auto bg-[#F3F0E9] rounded-3xl shadow-2xl p-8 md:p-12">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           {/* booking id */}
