@@ -14,6 +14,7 @@ export default function HomeHeroSection() {
         autoPlay
         muted
         loop
+        preload="none"
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />

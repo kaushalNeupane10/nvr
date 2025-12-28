@@ -53,7 +53,7 @@ export default function Navbar() {
         </ul>
 
         {/* mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden">
+        <button onClick={() => setOpen(!open)} className="md:hidden" aria-label="mobile btn">
           <div className="space-y-1">
             <span className="block w-6 h-0.5 bg-white" />
             <span className="block w-6 h-0.5 bg-white" />
