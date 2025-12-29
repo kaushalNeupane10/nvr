@@ -65,7 +65,7 @@ export default function Navbar() {
       {/* mobile menu */}
       {open && (
         <div className="md:hidden bg-[#00311F] px-6 pb-6">
-          <ul className="flex flex-col gap-4 text-sm font-medium">
+          <ul className="flex flex-col gap-4 text-sm font-medium pt-4">
             <li><Link href="/" onClick={() => setOpen(false)}>Home</Link></li>
             <li><Link href="/about" onClick={() => setOpen(false)}>About Us</Link></li>
             <li><Link href="/rooms" onClick={() => setOpen(false)}>Rooms</Link></li>
