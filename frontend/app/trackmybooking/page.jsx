@@ -1,5 +1,5 @@
 import BookingTracker from "../../components/BookingTracking"
-export default function page() {
+export default function Page() {
   return (
     <>
      <BookingTracker/> 
