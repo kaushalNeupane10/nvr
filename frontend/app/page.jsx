@@ -6,7 +6,7 @@ import Reservation from "@/components/Reservation";
 import HomeHeroSection from "@/components/HomeHeroSection";
 
 export const metadata = {
-  metadataBase: new URL("https://narayaniviewresort.com"),
+  metadataBase: new URL("https://nvr-pi.vercel.app/"),
 
   title: "Narayani View Resort | Best Resort in Nepal Near Chitwan",
   description:
@@ -28,7 +28,7 @@ export const metadata = {
     title: "Narayani View Resort – Best Nature Resort in Nepal",
     description:
       "Enjoy stunning Narayani river views, jungle safari experiences, authentic Tharu culture, and luxury comfort in Nepal.",
-    url: "https://narayaniviewresort.com",
+    url: "https://nvr-pi.vercel.app/",
     siteName: "Narayani View Resort",
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://narayaniviewresort.com",
+    canonical: "https://nvr-pi.vercel.app/",
   },
 
   other: {
