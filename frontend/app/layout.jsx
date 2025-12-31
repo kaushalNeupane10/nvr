@@ -21,6 +21,43 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* standard favicon*/}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        {/* apple icon */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-icon-180x180.png"
+        />
+
+        {/* android and pwa */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-icon-192x192.png"
+        />
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* windows and microsoft */}
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        {/* seo optimization jumbo meta info */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
