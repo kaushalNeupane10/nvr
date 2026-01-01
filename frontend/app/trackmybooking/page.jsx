@@ -1,36 +1,28 @@
 import BookingTracker from "@/components/trackMyBooking/BookingTracking";
 
 export const metadata = {
-  metadataBase: new URL("https://nvr-pi.vercel.app/"),
+  metadataBase: new URL("https://nvr-pi.vercel.app"),
 
-  title: "Narayani View Resort | Best Resort in Nepal Near Chitwan",
+  title: "Track My Booking | Narayani View Resort",
   description:
-    "Narayani View Resort is one of the best resorts in Nepal offering river views, jungle safari, authentic Tharu culture, luxury rooms, and peaceful nature stays.",
+    "Track or manage your booking at Narayani View Resort in Chitwan, Nepal. Check reservation status, dates, and booking details easily.",
 
-  keywords: [
-    "resort in nepal",
-    "best resort in nepal",
-    "narayani view resort",
-    "chitwan resort",
-    "jungle safari resort nepal",
-    "river view resort nepal",
-    "tharu culture resort",
-    "luxury resort nepal",
-    "family resort nepal"
-  ],
+  alternates: {
+    canonical: "/track-my-booking",
+  },
 
   openGraph: {
-    title: "Narayani View Resort – Best Nature Resort in Nepal",
+    title: "Track My Booking | Narayani View Resort",
     description:
-      "Enjoy stunning Narayani river views, jungle safari experiences, authentic Tharu culture, and luxury comfort in Nepal.",
-    url: "https://nvr-pi.vercel.app/",
+      "Check and manage your reservation at Narayani View Resort in Chitwan, Nepal.",
+    url: "https://nvr-pi.vercel.app/track-my-booking",
     siteName: "Narayani View Resort",
     images: [
       {
-        url: "https://nvr-pi.vercel.app/images/about/narayaniscene.png",
+        url: "/images/about/narayaniscene.png",
         width: 1200,
         height: 630,
-        alt: "Narayani View Resort with river and nature view in Nepal",
+        alt: "Track booking at Narayani View Resort in Chitwan Nepal",
       },
     ],
     locale: "en_NP",
@@ -39,35 +31,18 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Narayani View Resort | Best Resort in Nepal",
+    title: "Track My Booking | Narayani View Resort",
     description:
-      "Experience breathtaking river views, safari adventures, and peaceful nature stays in Nepal.",
+      "Track your booking status at Narayani View Resort in Chitwan, Nepal.",
     images: ["/images/about/narayaniscene.png"],
   },
 
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
-
-  alternates: {
-    canonical: "https://nvr-pi.vercel.app/",
-  },
-
-  other: {
-    "geo.region": "NP",
-    "geo.placename": "Nepal",
-    "geo.position": "27.7172;85.3240",
-    "ICBM": "27.7172, 85.3240",
   },
 };
+
 
 export default function Page() {
   return (

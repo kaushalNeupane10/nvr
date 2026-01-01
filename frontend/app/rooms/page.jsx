@@ -4,36 +4,36 @@ import Reservation from "@/components/universal/Reservation";
 import RoomCard from "@/components/universal/RoomCard";
 
 export const metadata = {
-  metadataBase: new URL("https://nvr-pi.vercel.app/"),
+  metadataBase: new URL("https://nvr-pi.vercel.app"),
 
-  title: "Narayani View Resort | Best Resort in Nepal Near Chitwan",
+  title: "Rooms & Suites | Narayani View Resort, Chitwan Nepal",
   description:
-    "Narayani View Resort is one of the best resorts in Nepal offering river views, jungle safari, authentic Tharu culture, luxury rooms, and peaceful nature stays.",
+    "Explore luxury rooms and suites at Narayani View Resort in Chitwan, Nepal. Enjoy river-view rooms, modern amenities, peaceful nature, and authentic hospitality.",
 
   keywords: [
-    "resort in nepal",
-    "best resort in nepal",
-    "narayani view resort",
-    "chitwan resort",
-    "jungle safari resort nepal",
-    "river view resort nepal",
-    "tharu culture resort",
-    "luxury resort nepal",
-    "family resort nepal"
+    "rooms in chitwan resort",
+    "luxury rooms nepal",
+    "river view rooms chitwan",
+    "narayani view resort rooms",
+    "resort accommodation nepal"
   ],
 
+  alternates: {
+    canonical: "/rooms",
+  },
+
   openGraph: {
-    title: "Narayani View Resort – Best Nature Resort in Nepal",
+    title: "Rooms & Suites | Narayani View Resort",
     description:
-      "Enjoy stunning Narayani river views, jungle safari experiences, authentic Tharu culture, and luxury comfort in Nepal.",
-    url: "https://nvr-pi.vercel.app/",
+      "Discover luxury rooms and suites at Narayani View Resort with river views and modern comfort.",
+    url: "https://nvr-pi.vercel.app/rooms",
     siteName: "Narayani View Resort",
     images: [
       {
-        url: "https://nvr-pi.vercel.app/images/about/narayaniscene.png",
+        url: "/images/rooms/heroroom.jpg",
         width: 1200,
         height: 630,
-        alt: "Narayani View Resort with river and nature view in Nepal",
+        alt: "Luxury rooms at Narayani View Resort in Chitwan Nepal",
       },
     ],
     locale: "en_NP",
@@ -42,35 +42,18 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Narayani View Resort | Best Resort in Nepal",
+    title: "Rooms & Suites | Narayani View Resort",
     description:
-      "Experience breathtaking river views, safari adventures, and peaceful nature stays in Nepal.",
-    images: ["/images/about/narayaniscene.png"],
+      "View luxury rooms and suites at Narayani View Resort in Chitwan, Nepal.",
+    images: ["/images/rooms/heroroom.jpg"],
   },
 
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
-
-  alternates: {
-    canonical: "https://nvr-pi.vercel.app/",
-  },
-
-  other: {
-    "geo.region": "NP",
-    "geo.placename": "Nepal",
-    "geo.position": "27.7172;85.3240",
-    "ICBM": "27.7172, 85.3240",
   },
 };
+
 
 export default function Page() {
   return (

@@ -3,36 +3,28 @@ import AboutUsHero from "@/components/about/AboutUsHero";
 import Location from "@/components/about/Location";
 
 export const metadata = {
-  metadataBase: new URL("https://nvr-pi.vercel.app/"),
+  metadataBase: new URL("https://nvr-pi.vercel.app"),
 
-  title: "Narayani View Resort | Best Resort in Nepal Near Chitwan",
+  title: "About Narayani View Resort | Chitwan, Nepal",
   description:
-    "Narayani View Resort is one of the best resorts in Nepal offering river views, jungle safari, authentic Tharu culture, luxury rooms, and peaceful nature stays.",
+    "Learn about Narayani View Resort in Chitwan, Nepal. Discover our story, Tharu culture, jungle safari experiences, and nature-inspired luxury stays.",
 
-  keywords: [
-    "resort in nepal",
-    "best resort in nepal",
-    "narayani view resort",
-    "chitwan resort",
-    "jungle safari resort nepal",
-    "river view resort nepal",
-    "tharu culture resort",
-    "luxury resort nepal",
-    "family resort nepal"
-  ],
+  alternates: {
+    canonical: "/about",
+  },
 
   openGraph: {
-    title: "Narayani View Resort – Best Nature Resort in Nepal",
+    title: "About Narayani View Resort",
     description:
-      "Enjoy stunning Narayani river views, jungle safari experiences, authentic Tharu culture, and luxury comfort in Nepal.",
-    url: "https://nvr-pi.vercel.app/",
+      "Explore the story, culture, and nature behind Narayani View Resort in Chitwan, Nepal.",
+    url: "https://nvr-pi.vercel.app/about",
     siteName: "Narayani View Resort",
     images: [
       {
-        url: "https://nvr-pi.vercel.app/images/about/narayaniscene.png",
+        url: "/images/about/narayaniscene.png",
         width: 1200,
         height: 630,
-        alt: "Narayani View Resort with river and nature view in Nepal",
+        alt: "Narayani View Resort surrounded by river and nature",
       },
     ],
     locale: "en_NP",
@@ -41,35 +33,18 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Narayani View Resort | Best Resort in Nepal",
+    title: "About Narayani View Resort",
     description:
-      "Experience breathtaking river views, safari adventures, and peaceful nature stays in Nepal.",
+      "Discover the story and culture of Narayani View Resort in Chitwan, Nepal.",
     images: ["/images/about/narayaniscene.png"],
   },
 
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
-
-  alternates: {
-    canonical: "https://nvr-pi.vercel.app/",
-  },
-
-  other: {
-    "geo.region": "NP",
-    "geo.placename": "Nepal",
-    "geo.position": "27.7172;85.3240",
-    "ICBM": "27.7172, 85.3240",
   },
 };
+
 
 export default function Page() {
   return (

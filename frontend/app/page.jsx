@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "Narayani View Resort",
     images: [
       {
-        url: "https://nvr-pi.vercel.app/images/about/narayaniscene.png",
+        url: "/images/about/narayaniscene.png",
         width: 1200,
         height: 630,
         alt: "Narayani View Resort with river and nature view in Nepal",
@@ -63,7 +63,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://nvr-pi.vercel.app/",
+    canonical: "/",
   },
 
   other: {
