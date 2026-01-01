@@ -29,8 +29,9 @@ export default function BookForm() {
       >
         {/* room */}
         <div>
-          <label className="block text-sm font-medium mb-1">Select Room</label>
+          <label className="block text-sm font-medium mb-1" aria-label="Select room">Select Room</label>
           <select
+            aria-label="rooms"
             name="room"
             required
             onChange={handleChange}
@@ -45,7 +46,7 @@ export default function BookForm() {
 
         {/* name */}
         <div>
-          <label className="block text-sm font-medium mb-1">Full Name</label>
+          <label className="block text-sm font-medium mb-1" aria-labelledby="full name">Full Name</label>
           <input
             type="text"
             name="name"
@@ -53,6 +54,7 @@ export default function BookForm() {
             onChange={handleChange}
             className="w-full rounded-lg border px-4 py-2"
             placeholder="John Doe"
+            aria-label="name"
           />
         </div>
 
@@ -65,6 +67,7 @@ export default function BookForm() {
             onChange={handleChange}
             className="rounded-lg border px-4 py-2"
             placeholder="Email address"
+            aria-label="email"
           />
           <input
             type="tel"
@@ -73,6 +76,7 @@ export default function BookForm() {
             onChange={handleChange}
             className="rounded-lg border px-4 py-2"
             placeholder="Phone number"
+            aria-label="number"
           />
         </div>
 
@@ -84,6 +88,7 @@ export default function BookForm() {
             required
             onChange={handleChange}
             className="rounded-lg border px-4 py-2"
+            aria-label="checkIn-date"
           />
           <input
             type="date"
@@ -91,6 +96,7 @@ export default function BookForm() {
             required
             onChange={handleChange}
             className="rounded-lg border px-4 py-2"
+            aria-label="checkOut-date"
           />
         </div>
 
@@ -102,8 +108,10 @@ export default function BookForm() {
             min="1"
             max="10"
             name="guests"
+            placeholder="Number Of Guest"
             onChange={handleChange}
             className="w-full rounded-lg border px-4 py-2"
+            aria-label="numberOfGuest"
           />
         </div>
 
@@ -114,12 +122,14 @@ export default function BookForm() {
           onChange={handleChange}
           className="w-full rounded-lg border px-4 py-2"
           placeholder="Special requests (optional)"
+          aria-label="message"
         />
 
         {/* submit btn */}
         <button
           type="submit"
           className="w-full py-3 rounded-xl bg-[#00311F] text-white font-semibold hover:bg-[#004F2F] transition"
+          aria-label="submitBtn"
         >
           Confirm Booking
         </button>

@@ -1,9 +1,9 @@
-import WhyChooseUs from "@/components/WhyChooseUs";
-import BookRoom from "@/components/BookRoom";
-import Experience from "@/components/Experience";
-import Testimonials from "@/components/Testimonials";
-import Reservation from "@/components/Reservation";
-import HomeHeroSection from "@/components/HomeHeroSection";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import BookRoom from "@/components/home/BookRoom";
+import Experience from "@/components/universal/Experience";
+import Testimonials from "@/components/home/Testimonials";
+import Reservation from "@/components/universal/Reservation";
+import HomeHeroSection from "@/components/home/HomeHeroSection";
 
 export const metadata = {
   metadataBase: new URL("https://nvr-pi.vercel.app/"),

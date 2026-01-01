@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutUsHero from "@/components/AboutUsHero";
-import Location from "@/components/Location";
+import AboutUsHero from "@/components/about/AboutUsHero";
+import Location from "@/components/about/Location";
 
 export const metadata = {
   metadataBase: new URL("https://nvr-pi.vercel.app/"),

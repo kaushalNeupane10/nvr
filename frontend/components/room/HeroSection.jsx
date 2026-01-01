@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroMotion from "./HeroMotion";
+import HeroMotion from "../universal/HeroMotion";
 
 export default function Hero() {
   return (

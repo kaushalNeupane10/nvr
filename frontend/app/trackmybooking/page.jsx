@@ -1,4 +1,4 @@
-import BookingTracker from "../../components/BookingTracking";
+import BookingTracker from "@/components/trackMyBooking/BookingTracking";
 
 export const metadata = {
   metadataBase: new URL("https://nvr-pi.vercel.app/"),

@@ -1,7 +1,7 @@
-import HeroSection from "@/components/HeroSection";
-import Experience from "@/components/Experience";
-import Reservation from "@/components/Reservation";
-import RoomCard from "@/components/RoomCard";
+import HeroSection from "@/components/room/HeroSection";
+import Experience from "@/components/universal/Experience";
+import Reservation from "@/components/universal/Reservation";
+import RoomCard from "@/components/universal/RoomCard";
 
 export const metadata = {
   metadataBase: new URL("https://nvr-pi.vercel.app/"),

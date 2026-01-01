@@ -1,7 +1,7 @@
 "use client";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-import RoomCard from "@/components/RoomCard";
+import RoomCard from "@/components/universal/RoomCard";
 export default function BookRoom() {
   return (
     <>

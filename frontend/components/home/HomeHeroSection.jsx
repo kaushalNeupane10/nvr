@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import HeroMotion from "./HeroMotion";
+import Navbar from "../universal/Navbar";
+import HeroMotion from "../universal/HeroMotion";
 
 export default function HomeHeroSection() {
   return (

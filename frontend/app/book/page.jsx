@@ -1,5 +1,5 @@
-import BookingHero from "../../components/BookingHero";
-import BookForm from "../../components/BookForm";
+import BookingHero from "@/components/bookNow/BookingHero";
+import BookForm from "@/components/bookNow/BookForm";
 
 export const metadata = {
   metadataBase: new URL("https://nvr-pi.vercel.app/"),
